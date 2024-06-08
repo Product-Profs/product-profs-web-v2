@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Profs | Learn a No-code Tech Skill</title>
+    <meta
+      name="description"
+      content="ProductProfs is your one-stop shop for anything product related tech skills
+  (product management, product design, product marketing). We are
+  focused on no-code tech skills that can improve the livelihood of
+  an average African and every person of colour."
+    />
+    <meta
+      name="keywords"
+      content="Product, ProductProfs, Product Profs, nocode, no code, product design, product marketing, technology, tech, tech skills, tech training, product management, upskill, beginner, pm"
+    />
+    <meta name="author" content="Product Profs" />
+    <script
+      src="https://kit.fontawesome.com/96674dd901.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/icons/product-profs.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./src/assets/components/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="h-8 bg-primary flex items-center justify-between">
+      <div class="flex px-2 md:px-8 mr-4 space-x-2">
+        <div class="rounded-full h-4 w-4 bg-white"></div>
+        <div class="rounded-full h-4 w-4 bg-white"></div>
+        <div class="rounded-full h-4 w-4 bg-white"></div>
+      </div>
+
+      <div class="text-white font-semibold">
+        <marquee
+          onmouseover="this.stop();"
+          onmouseout="this.start();"
+          direction="left"
+          ><a
+            href="./freeCourse.html"
+            target="_blank"
+            class="text-white underline"
+          >
+            Want to know more about our Program? Click to attend our
+            masterclass!</a
+          ></marquee
+        >
+      </div>
+
+      <div></div>
+    </div>
+    <div class="font-body">
+      <header>
+        <nav
+          class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+        >
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          >
+            <a href="javascript:void(0)" class="flex items-center">
+              <img
+                src="./src/assets/icons/product-profs-logo.svg"
+                class="h-12 w-auto mr-3"
+                alt="ProductProfs Logo"
+              />
+            </a>
+            <button
+              data-collapse-toggle="navbar-dropdown"
+              type="button"
+              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-dropdown"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-8 h-8"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#7F0A7D"
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+              <ul
+                class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="./index.html"
+                    class="md:underline underline-offset-3 decoration-4 decoration-primary block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 md:dark:text-blue-500 md:dark:bg-transparent"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./about.html"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  >
+                    Courses
+                    <svg
+                      class="w-5 h-5 ml-1"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-96 dark:bg-gray-700 dark:divide-gray-600"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a
+                          href="./pmBeginners.html"
+                          class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Product Management for Beginners</a
+                        >
+                      </li>
+                      <hr
+                        class="h-px my-1 bg-gray-300 border-0 dark:bg-gray-700"
+                      />
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Product Management Leadership program (Launching
+                          soon)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Product Design (Launching soon)</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0)"
+                          class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
+                          >Product Marketing (Launching soon)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <a
+                    href="./enterprise.html"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Enterprise</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./resources.html"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >Resources</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center">
+        <div class="p-8 md:p-12 lg:px-4 lg:py-16">
+          <div
+            class="mx-auto max-w-xl text-center md:text-left ltr:sm:text-left"
+          >
+            <h1
+              class="font-heading capitalize text-3xl font-extrabold text-primary sm:text-4xl"
+            >
+              Build and accelerate your product career
+            </h1>
+
+            <p class="mt-5 text-gray-500 md:mt-4 md:block">
+              Learn from experienced African Product Leaders from top companies.
+              Gain mentorship, certification and skills needed to design, build
+              and scale digital products for African companies and Diaspora.
+            </p>
+
+            <div class="mt-6 md:mt-8 mb-8">
+              <a
+                href="#courses"
+                class="inline-flex items-center space-x-4 text-primary text-base rounded bg-transparent border-2 border-primary px-12 py-3 font-medium transition hover:bg-primary hover:text-white focus:outline-none focus:ring focus:ring-black"
+              >
+                Enroll Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="py-8 relative w-full px-5 rounded-lg cursor-pointer group xl:px-0"
+        >
+          <iframe
+            class="w-full max-w-full"
+            height="315"
+            src="https://www.youtube.com/embed/5QOcXzdPJGM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <a
+          href="https://wa.me/+2347011978260"
+          target="_blank"
+          class="float inline-flex items-center px-3 py-1.5 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Chat with Us
+
+          <img
+            class="w-auto h-4 my-float ml-2"
+            src="./src/assets/icons/whatsapp-icon.svg"
+            alt="whatsapp-icon"
+          />
+        </a>
+      </section>
+
+      <!-- ====== Courses Section Start -->
+
+      <!-- features -->
+      <h2 class="course-portal">Our Courses</h2>
+      <section id="courses" class="feature-card comic">
+        <div class="card-content">
+          <div class="text">
+            <h3>Product Management for Beginners</h3>
+            <p>
+              Land your first job and learn everything you should be doing in
+              the first 90 days.
+            </p>
+          </div>
+          <a
+            href="./pmBeginners.html"
+            class="text-body-color hover:bg-primary inline-flex justify-end self-start rounded-full border border-primary py-2 px-7 text-base font-medium transition hover:text-white"
+            >View Details</a
+          >
+        </div>
+        <div class="card-image">
+          <img src="./src/assets/images/pm-beginners.jpg" alt="" />
+        </div>
+      </section>
+      <section class="feature-card books">
+        <div class="card-content">
+          <div class="text">
+            <h3>Product Management Leadership program</h3>
+            <p>
+              Get promoted to a senior role as a PM or land a senior role as a
+              PM.
+            </p>
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="text-body-color hover:bg-primary inline-flex justify-center self-start rounded-full border border-primary py-2 px-7 text-base font-medium transition hover:text-white"
+            >Launching Soon!</a
+          >
+        </div>
+        <div class="card-image">
+          <img src="./src/assets/images/pm-upskillers.jpg" alt="" />
+        </div>
+      </section>
+      <section class="feature-card flash-cards">
+        <div class="card-content">
+          <div class="text">
+            <h3>Product Design</h3>
+            <p>
+              Land your first product design job. Learn everything you should be
+              doing in the first 90 days.
+            </p>
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="text-body-color hover:bg-primary inline-flex justify-center self-start rounded-full border border-primary py-2 px-7 text-base font-medium transition hover:text-white"
+            >Launching Soon!</a
+          >
+        </div>
+        <div class="card-image">
+          <img src="./src/assets/images/product-design.jpg" alt="" />
+        </div>
+      </section>
+      <section class="feature-card books">
+        <div class="card-content">
+          <div class="text">
+            <h3>Product Marketing</h3>
+            <p>
+              Land your first product marketing job. Learn everything you should
+              be doing to take a digital product to market.
+            </p>
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="text-body-color hover:bg-primary inline-flex justify-center self-start rounded-full border border-primary py-2 px-7 text-base font-medium transition hover:text-white"
+            >Launching Soon!</a
+          >
+        </div>
+        <div class="card-image">
+          <img src="./src/assets/images/product-marketing.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- brand showcase -->
+      <div class="mt-4 bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <h2
+            class="uppercase mb-4 text-center text-lg font-bold text-gray-800 md:mb-8 lg:text-xl"
+          >
+            Our Trainers Work in these Companies
+          </h2>
+
+          <div
+            class="grid grid-cols-2 p-6 md:grid-cols-5 place-items-center gap-4 rounded-lg bg-gray-100 md:p-2 sm:h-40 sm:content-evenly"
+          >
+            <!-- logo - start -->
+            <div class="flex justify-center text-indigo-500">
+              <img
+                class="h-14 w-auto lg:h-16"
+                src="./src/assets/icons/gig.png"
+                alt=""
+              />
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex justify-center text-indigo-500">
+              <img
+                class="h-12 w-auto lg:h-16"
+                src="./src/assets/icons/ibm.svg"
+                alt=""
+              />
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex justify-center text-indigo-500">
+              <img
+                class="h-12 w-auto lg:h-16"
+                src="./src/assets/icons/tradeally-logo.svg"
+                alt=""
+              />
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex justify-center text-indigo-500">
+              <img
+                class="h-12 w-auto lg:h-16"
+                src="./src/assets/icons/airsmat-logo-test.svg"
+                alt=""
+              />
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div
+              class="col-span-2 md:col-span-1 flex justify-center text-indigo-500"
+            >
+              <img
+                class="h-16 w-auto"
+                src="./src/assets/icons/edves.svg"
+                alt=""
+              />
+            </div>
+            <!-- logo - end -->
+          </div>
+        </div>
+      </div>
+
+      <!-- features -->
+      <section class="pt-8 bg-white pb-8">
+        <div
+          class="px-12 mx-auto flex flex-col justify-center items-center max-w-7xl"
+        >
+          <h2
+            class="mb-1 text-3xl font-heading font-extrabold leading-tight text-gray-900"
+          >
+            Features
+          </h2>
+          <p class="text-center mb-16 text-lg text-gray-500">
+            Here's why we are different
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-x-16 lg:gap-x-24 gap-y-20"
+          >
+            <div class="flex items-center space-x-3">
+              <div
+                class="flex items-center justify-center w-16 h-16 text-red-600 bg-red-100 rounded-full"
+              >
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                  ></path>
+                </svg>
+              </div>
+              <h3
+                class="mb-2 text-base font-semibold leading-tight text-gray-900 lg:text-lg"
+              >
+                Project-based Learning
+              </h3>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div
+                class="flex items-center justify-center w-16 h-16 p-2 text-blue-600 bg-blue-100 rounded-full"
+              >
+                <svg
+                  class="w-12 h-12"
+                  viewBox="0 0 218 154"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M109 65C103.637 65 99.0469 63.0906 95.2281 59.2719C91.4094 55.4531 89.5 50.8625 89.5 45.5C89.5 40.1375 91.4094 35.5469 95.2281 31.7281C99.0469 27.9094 103.637 26 109 26C114.362 26 118.953 27.9094 122.772 31.7281C126.591 35.5469 128.5 40.1375 128.5 45.5C128.5 50.8625 126.591 55.4531 122.772 59.2719C118.953 63.0906 114.362 65 109 65ZM70 104V90.35C70 87.5875 70.7118 85.0476 72.1353 82.7304C73.5588 80.4131 75.447 78.6468 77.8 77.4313C82.8375 74.9125 87.9562 73.0226 93.1562 71.7616C98.3562 70.5006 103.637 69.8717 109 69.875C114.362 69.875 119.644 70.5055 124.844 71.7665C130.044 73.0275 135.162 74.9158 140.2 77.4313C142.556 78.65 144.446 80.418 145.87 82.7352C147.293 85.0525 148.003 87.5908 148 90.35V104H70Z"
+                    fill="#7F0A7D"
+                  />
+                  <path
+                    d="M0 154V135.882H18.1667V0H199.833V135.882H218V154H0ZM90.8333 135.882H127.167V126.824H90.8333V135.882ZM36.3333 108.706H181.667V18.1176H36.3333V108.706Z"
+                    fill="#7F0A7D"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="mb-2 text-base font-semibold leading-tight text-gray-900 lg:text-lg"
+              >
+                Tech powered Instructor led live training
+              </h3>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div
+                class="flex items-center justify-center w-16 h-16 p-2 text-purple-600 bg-purple-100 rounded-full"
+              >
+                <svg
+                  class="w-12 h-12"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+                  ></path>
+                </svg>
+              </div>
+              <h3
+                class="mb-2 text-base font-semibold leading-tight text-gray-900 lg:text-lg"
+              >
+                An exclusive marketplace of tech talents
+              </h3>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div
+                class="flex items-center justify-center w-16 h-16 p-2 text-indigo-600 bg-indigo-100 rounded-full"
+              >
+                <svg
+                  class="w-12 h-12"
+                  viewBox="0 0 128 220"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M46.9412 84C44.679 84 42.5095 84.8955 40.91 86.4896C39.3104 88.0837 38.4118 90.2457 38.4118 92.5V102.146C39.4694 101.643 40.6192 101.292 41.8235 101.119V92.5C41.8235 91.1474 42.3627 89.8502 43.3225 88.8938C44.2822 87.9373 45.5839 87.4 46.9412 87.4H70.8235C72.1808 87.4 73.4825 87.9373 74.4423 88.8938C75.402 89.8502 75.9412 91.1474 75.9412 92.5V116.3C75.9412 117.653 75.402 118.95 74.4423 119.906C73.4825 120.863 72.1808 121.4 70.8235 121.4H69.1176V124.8H70.8235C73.0857 124.8 75.2552 123.904 76.8547 122.31C78.4543 120.716 79.3529 118.554 79.3529 116.3V112.9L87.5412 119.02C88.0481 119.399 88.6508 119.63 89.2818 119.686C89.9129 119.743 90.5473 119.623 91.114 119.341C91.6807 119.059 92.1573 118.625 92.4905 118.087C92.8236 117.55 93 116.931 93 116.3V92.5C93 91.8686 92.8236 91.2496 92.4905 90.7125C92.1573 90.1754 91.6807 89.7413 91.114 89.4589C90.5473 89.1766 89.9129 89.057 89.2818 89.1137C88.6508 89.1704 88.0481 89.4011 87.5412 89.78L79.3529 95.9V92.5C79.3529 90.2457 78.4543 88.0837 76.8547 86.4896C75.2552 84.8955 73.0857 84 70.8235 84H46.9412ZM79.3529 100.15L89.5882 92.5V116.3L79.3529 108.65V100.15ZM35 112.9C35 110.646 35.8986 108.484 37.4982 106.89C39.0978 105.296 41.2673 104.4 43.5294 104.4H57.1765C59.4386 104.4 61.6081 105.296 63.2077 106.89C64.8072 108.484 65.7059 110.646 65.7059 112.9V126.5C65.7059 128.754 64.8072 130.916 63.2077 132.51C61.6081 134.104 59.4386 135 57.1765 135H43.5294C41.2673 135 39.0978 134.104 37.4982 132.51C35.8986 130.916 35 128.754 35 126.5V112.9ZM48.7153 113.016C48.4941 112.864 48.237 112.773 47.9695 112.751C47.7021 112.729 47.4334 112.777 47.1902 112.89C46.9905 112.976 46.8097 113.101 46.658 113.257C46.3402 113.582 46.1626 114.017 46.1633 114.471V124.926C46.161 125.151 46.2036 125.375 46.2885 125.584C46.3734 125.793 46.499 125.983 46.658 126.143C46.8148 126.298 46.9972 126.424 47.1971 126.517C47.5432 126.675 47.936 126.699 48.2991 126.585C48.4564 126.533 48.6057 126.46 48.7426 126.367L56.576 121.04C56.8142 120.883 57.0062 120.666 57.1321 120.411C57.2617 120.153 57.3284 119.869 57.3266 119.581C57.3248 119.294 57.2547 119.01 57.1219 118.755C56.9875 118.503 56.7901 118.29 56.5487 118.136L48.7153 113.016Z"
+                    fill="#7F0A7D"
+                  />
+                  <path
+                    d="M48.75 3H25.875C19.8082 3 13.9898 5.41568 9.69993 9.71562C5.41004 14.0156 3 19.8475 3 25.9286V194.071C3 200.152 5.41004 205.984 9.69993 210.284C13.9898 214.584 19.8082 217 25.875 217H102.125C108.192 217 114.01 214.584 118.3 210.284C122.59 205.984 125 200.152 125 194.071V25.9286C125 19.8475 122.59 14.0156 118.3 9.71562C114.01 5.41568 108.192 3 102.125 3H79.25M48.75 3V18.2857H79.25V3M48.75 3H79.25M48.75 194.071H79.25"
+                    stroke="#7F0A7D"
+                    stroke-width="12"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="mb-2 text-base font-semibold leading-tight text-gray-900 lg:text-lg"
+              >
+                Access to class recording after training
+              </h3>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div
+                class="flex items-center justify-center w-16 h-16 p-2 text-pink-600 bg-pink-100 rounded-full"
+              >
+                <svg
+                  class="w-12 h-12"
+                  viewBox="0 0 147 133"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M133.636 93.1V13.3H13.3636V93.1H133.636ZM133.636 0C137.181 0 140.58 1.40125 143.086 3.89548C145.592 6.38971 147 9.77262 147 13.3V93.1C147 96.6274 145.592 100.01 143.086 102.505C140.58 104.999 137.181 106.4 133.636 106.4H86.8636V119.7H100.227V133H46.7727V119.7H60.1364V106.4H13.3636C9.81938 106.4 6.42029 104.999 3.91412 102.505C1.40795 100.01 0 96.6274 0 93.1V13.3C0 5.9185 5.94682 0 13.3636 0H133.636ZM26.7273 26.6H86.8636V59.85H26.7273V26.6ZM93.5455 26.6H120.273V39.9H93.5455V26.6ZM120.273 46.55V79.8H93.5455V46.55H120.273ZM26.7273 66.5H53.4545V79.8H26.7273V66.5ZM60.1364 66.5H86.8636V79.8H60.1364V66.5Z"
+                    fill="#7F0A7D"
+                  />
+                </svg>
+              </div>
+              <h3
+                class="mb-2 text-base font-semibold leading-tight text-gray-900 lg:text-lg"
+              >
+                Employer's dashboard for hiring
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+
+      <div
+        class="mt-8 mx-auto w-11/12 p-4 text-center bg-white sm:p-16 border border-gray-200 rounded-lg shadow"
+      >
+        <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
+          Join our community of over 105+ learners
+        </h5>
+        <p class="mb-8 text-base text-gray-500 sm:text-lg dark:text-gray-400">
+          Stay up-to-date on jobs, and events, get free access to all our
+          Product career resources.
+        </p>
+        <div
+          class="mb-4 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4"
+        >
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfIf3mZg-X6L2l77v-3sDEgi5rl6ossRR4K6g5wyKGlht_YYA/viewform?usp=sharing"
+            target="_blank"
+            class="font-medium w-full sm:w-auto text-white bg-primary hover:opacity-80 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full text-base px-16 py-4 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          >
+            Subscribe
+          </a>
+        </div>
+      </div>
+
+      <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
+      <!-- footer begins-->
+      <footer class="footer">
+        <div class="brand">
+          <div class="logo">
+            <img
+              src="./src/assets/icons/product-profs-logo.svg"
+              alt=""
+              style="width: 100%"
+            />
+          </div>
+          <div class="social">
+            <p class="social-para">Follow us on socials</p>
+            <div class="social-icons">
+              <a href="https://www.youtube.com/@ProductProfs"
+                ><img src="./src/assets/icons/youtube-red.svg" alt=""
+              /></a>
+              <a
+                href="https://instagram.com/productprofs?igshid=NTc4MTIwNjQ2YQ=="
+                target="_blank"
+                ><img src="./src/assets/icons/instagram.svg" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/product-profs/"
+                target="_blank"
+                ><img src="./src/assets/icons/linkedin.svg" alt=""
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100092807263045&mibextid=LQQJ4d"
+                target="_blank"
+                ><img src="./src/assets/icons/facebook.svg" alt=""
+              /></a>
+              <a href="https://twitter.com/ProductProfs" target="_blank"
+                ><img src="./src/assets/icons/twitter.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="useful-links">
+          <div class="company">
+            <p>Company</p>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./enterprise.html">Enterprise</a>
+          </div>
+          <div class="products">
+            <p>Products</p>
+            <a href="./freeCourse.html">Free Course</a>
+            <a href="./pmBeginners.html">PM for Beginners</a>
+            <a href="./resources.html">Resources</a>
+          </div>
+        </div>
+
+        <form
+          class="newsletter"
+          action="https://productprofs.us21.list-manage.com/subscribe/post?u=429e2ee00337ef3e35c111000&amp;id=7147d06c75&amp;f_id=003bece6f0"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+        >
+          <label>Newsletter</label>
+
+          <p>
+            Learn How To Pay Your Rent With One Month Salary With A Tech Skill…
+            No Code, No Degree And No Age Barrier.
+          </p>
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <div class="divider flex flex-col md:flex-row">
+          <div class="flex items-center gap-2">
+            <img
+              src="./src/assets/icons/product-profs.svg"
+              alt="ProductProfs icon"
+            />
+            <p class="box-border mt-0 text-sm border-0 border-solid">
+              © 2024 ProductProfs. All Rights Reserved.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./src/assets/images/positivessl_trust_seal_lg_222x54.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </footer>
+
+      <!-- footer ends here -->
+    </div>
+
+    <script src="./src/flowbite.min.js"></script>
+    <script src="./src/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Makes the animation pause on hover
+.moving-text:hover {
+  animation-play-state: paused;
+}
+
+/* The animation */
+/* @keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.moving-text {
+  animation: marquee 15s linear infinite;
+} */
+
+.course-portal {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Roboto", sans-serif;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.02625rem;
+}
+
+.float {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  background-color: #25d366;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 0.2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+.img-holder {
+  position: relative;
+}
+.img-holder span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.resources-span {
+  top: 20px;
+}
+
+.feature-card {
+  background: #edefff;
+  margin-top: 3rem;
+  border-radius: 1.25rem;
+  padding: 2.36888rem 2.25rem 2.52775rem 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.81rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-basis: 65%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.text > h3 {
+  color: #202124;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.045rem;
+}
+
+.text > p {
+  color: #1e1e1e;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+/* .card-content > a {
+  padding: 0.62294rem 1.12125rem;
+  align-self: flex-start;
+  border-radius: 0.49838rem;
+  background: #202020;
+  color: var(--Neutral-200, #e5e7eb);
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+  font-size: 0.99669rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+} */
+
+.card-image {
+  width: 100%;
+}
+
+.card-image img {
+  border-radius: 1.25rem;
+}
+
+.comic {
+  background: #fef7e0;
+}
+
+.books {
+  /* background: #edefff; */
+  flex-direction: row-reverse;
+}
+.flash-cards {
+  background: #f6ecff;
+}
+
+@media screen and (max-width: 768px) {
+  .feature-card {
+    margin-inline: 1rem;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
+  .card-image > img {
+    width: 100%;
+  }
+  .books {
+    flex-direction: column-reverse;
+  }
+}

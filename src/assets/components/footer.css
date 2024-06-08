@@ -1,0 +1,158 @@
+footer a {
+  text-decoration: none;
+}
+
+.social {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5.43819rem;
+  background: #fff;
+  box-shadow: 0px 3.48px 13.052px 0px rgba(0, 0, 0, 0.05);
+}
+
+.social-para {
+  font-family: "Roboto", sans-serif;
+  color: #5f6368;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.30088rem; /* 173.447% */
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  margin-block: 0.625rem;
+  padding: 2rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: 4rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer .social {
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.footer .social-icons {
+  gap: 0.5rem;
+}
+
+.useful-links {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  gap: 4rem;
+}
+
+.company,
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.company > p,
+.products > p,
+.newsletter label {
+  color: #1e1e1e;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+.company > a,
+.products > a,
+.newsletter p {
+  color: #1e1e1e;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.06rem;
+}
+
+.newsletter button {
+  margin-left: 0;
+  align-self: flex-start;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border: 1px solid #1e1e1e;
+  border-radius: 24px;
+  outline: none;
+  background: #1e1e1e;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.21875rem; /* 150% */
+}
+
+.divider {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  padding-block: 1rem;
+  width: 100%;
+  border-top: 1px solid lightslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn {
+    align-self: flex-start;
+  }
+
+  .social {
+    padding: 0.625rem 1.25rem;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .social-icons {
+    gap: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    align-self: flex-start;
+  }
+
+  .footer {
+    padding-inline: 6.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    justify-content: space-between;
+  }
+
+  .divider {
+    grid-column: 1/4;
+  }
+}
