@@ -8125,6 +8125,11 @@ input[type="range"]:active::-webkit-slider-thumb {
     padding-bottom: 2rem;
   }
 
+  .sm\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
