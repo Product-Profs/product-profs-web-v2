@@ -6024,6 +6024,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 .feature-card {
+  margin-inline: 1rem;
   background: #edefff;
   margin-top: 3rem;
   border-radius: 1.25rem;
@@ -6081,6 +6082,12 @@ input[type="range"]:active::-webkit-slider-thumb {
   line-height: normal;
 } */
 
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .card-image {
   width: 100%;
 }
@@ -6104,7 +6111,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 @media screen and (max-width: 768px) {
   .feature-card {
-    margin-inline: 1rem;
     padding: 2rem 1rem;
     gap: 2rem;
     flex-direction: column-reverse;
@@ -8050,10 +8056,6 @@ input[type="range"]:active::-webkit-slider-thumb {
     display: grid;
   }
 
-  .sm\:h-40 {
-    height: 10rem;
-  }
-
   .sm\:w-auto {
     width: auto;
   }
@@ -8123,11 +8125,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .sm\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 
   .sm\:text-center {
@@ -8260,8 +8257,8 @@ input[type="range"]:active::-webkit-slider-thumb {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -8315,10 +8312,6 @@ input[type="range"]:active::-webkit-slider-thumb {
     padding: 3rem;
   }
 
-  .md\:p-2 {
-    padding: 0.5rem;
-  }
-
   .md\:p-6 {
     padding: 1.5rem;
   }
@@ -8345,6 +8338,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   .md\:py-2\.5 {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .md\:pr-1 {

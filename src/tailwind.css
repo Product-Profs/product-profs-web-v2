@@ -64,6 +64,7 @@
 }
 
 .feature-card {
+  margin-inline: 1rem;
   background: #edefff;
   margin-top: 3rem;
   border-radius: 1.25rem;
@@ -119,6 +120,12 @@
   line-height: normal;
 } */
 
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .card-image {
   width: 100%;
 }
@@ -141,7 +148,6 @@
 
 @media screen and (max-width: 768px) {
   .feature-card {
-    margin-inline: 1rem;
     padding: 2rem 1rem;
     gap: 2rem;
     flex-direction: column-reverse;
