@@ -1,446 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enterprise | Product Profs</title>
-    <script
-      src="https://kit.fontawesome.com/96674dd901.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="shortcut icon"
-      href="./src/assets/icons/product-profs.svg"
-      type="image/x-icon"
-    />
 
-    <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="stylesheet" href="./src/assets/components/footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="h-8 bg-primary flex items-center justify-between">
-      <div class="flex px-2 md:px-8 mr-4 space-x-2">
-        <div class="rounded-full h-4 w-4 bg-white"></div>
-        <div class="rounded-full h-4 w-4 bg-white"></div>
-        <div class="rounded-full h-4 w-4 bg-white"></div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise | Product Profs</title>
+  <script src="https://kit.fontawesome.com/96674dd901.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./src/assets/icons/product-profs.svg" type="image/x-icon" />
 
-      <div class="text-white font-semibold">
-        <marquee
-          onmouseover="this.stop();"
-          onmouseout="this.start();"
-          direction="left"
-          ><a
-            href="./freeCourse.html"
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="./src/assets/components/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="h-8 bg-primary flex items-center justify-between">
+    <div class="flex px-2 md:px-8 mr-4 space-x-2">
+      <div class="rounded-full h-4 w-4 bg-white"></div>
+      <div class="rounded-full h-4 w-4 bg-white"></div>
+      <div class="rounded-full h-4 w-4 bg-white"></div>
+    </div>
+
+    <div class="text-white font-semibold">
+      <marquee onmouseover="this.stop();" onmouseout="this.start();" direction="left"><a href="./freeCourse.html"
+          target="_blank" class="text-white underline">
+          Want to know more about our Program? Click to attend our
+          masterclass!</a></marquee>
+    </div>
+
+    <div></div>
+  </div>
+
+  <div class="font-body">
+    <header>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="./index.html" class="flex items-center">
+            <img src="./src/assets/icons/product-profs-logo.svg" class="h-12 w-auto mr-3" alt="ProductProfs Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-dropdown" type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill="#7F0A7D" fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="./index.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:text-primary md:bg-transparent md:text-gray-900 md:p-0 md:dark:text-blue-500 md:dark:bg-transparent"
+                  aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="./about.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                  Courses
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-96 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="./pmBeginners.html"
+                        class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">Product
+                        Management for Beginners</a>
+                    </li>
+                    <hr class="h-px my-1 bg-gray-300 border-0 dark:bg-gray-700" />
+                    <li>
+                      <a href="./pmLeadership.html"
+                        class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">Product
+                        Management Leadership program</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">Product
+                        Design (Launching soon)</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">Product
+                        Marketing (Launching soon)</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="./enterprise.html"
+                  class="md:underline underline-offset-3 decoration-4 decoration-primary block py-2 pl-3 pr-4 text-white bg-primary rounded hover:bg-gray-100 md:bg-transparent md:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Enterprise</a>
+              </li>
+              <li>
+                <a href="./resources.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="mt-6 mx-8 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+      <!-- content - start -->
+      <div class="text-center flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+        <p class="mb-4 font-semibold text-black md:mb-6 md:text-lg xl:text-xl">
+          Grow with ProductProfs
+        </p>
+
+        <h1 class="text-primary mb-8 text-2xl font-heading font-extrabold md:text-4xl">
+          Develop Your Team and Improve Productivity
+        </h1>
+
+        <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">
+          Trainings are designed to fit into your digital team’s need.
+        </p>
+
+        <div class="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAJeJWLpZbUGyWBuWNzDuQNlFMivHK499C6DTBpKGEfVdksw/viewform?usp=sharing"
             target="_blank"
-            class="text-white underline"
-          >
-            Want to know more about our Program? Click to attend our
-            masterclass!</a
-          ></marquee
-        >
-      </div>
-
-      <div></div>
-    </div>
-
-    <div class="font-body">
-      <header>
-        <nav
-          class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
-        >
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-          >
-            <a href="./index.html" class="flex items-center">
-              <img
-                src="./src/assets/icons/product-profs-logo.svg"
-                class="h-12 w-auto mr-3"
-                alt="ProductProfs Logo"
-              />
-            </a>
-            <button
-              data-collapse-toggle="navbar-dropdown"
-              type="button"
-              class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-dropdown"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-8 h-8"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill="#7F0A7D"
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-              <ul
-                class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-              >
-                <li>
-                  <a
-                    href="./index.html"
-                    class="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:text-primary md:bg-transparent md:text-gray-900 md:p-0 md:dark:text-blue-500 md:dark:bg-transparent"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./about.html"
-                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                    >About</a
-                  >
-                </li>
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-                  >
-                    Courses
-                    <svg
-                      class="w-5 h-5 ml-1"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-96 dark:bg-gray-700 dark:divide-gray-600"
-                  >
-                    <ul
-                      class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                      aria-labelledby="dropdownLargeButton"
-                    >
-                      <li>
-                        <a
-                          href="./pmBeginners.html"
-                          class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Product Management for Beginners</a
-                        >
-                      </li>
-                      <hr
-                        class="h-px my-1 bg-gray-300 border-0 dark:bg-gray-700"
-                      />
-                      <li>
-                        <a
-                          href="./pmLeadership.html"
-                          class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Product Management Leadership program</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Product Design (Launching soon)</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="javascript:void(0)"
-                          class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white"
-                          >Product Marketing (Launching soon)</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <li>
-                  <a
-                    href="./enterprise.html"
-                    class="md:underline underline-offset-3 decoration-4 decoration-primary block py-2 pl-3 pr-4 text-white bg-primary rounded hover:bg-gray-100 md:bg-transparent md:text-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                    >Enterprise</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./resources.html"
-                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                    >Resources</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <section
-        class="mt-6 mx-8 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row"
-      >
-        <!-- content - start -->
-        <div
-          class="text-center flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24"
-        >
-          <p
-            class="mb-4 font-semibold text-black md:mb-6 md:text-lg xl:text-xl"
-          >
-            Grow with ProductProfs
-          </p>
-
-          <h1
-            class="text-primary mb-8 text-2xl font-heading font-extrabold md:text-4xl"
-          >
-            Develop Your Team and Improve Productivity
-          </h1>
-
-          <p
-            class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg"
-          >
-            Trainings are designed to fit into your digital team’s need.
-          </p>
-
-          <div
-            class="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start"
-          >
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeAJeJWLpZbUGyWBuWNzDuQNlFMivHK499C6DTBpKGEfVdksw/viewform?usp=sharing"
-              target="_blank"
-              class="inline-block rounded-lg bg-primary px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base md:w-3/4"
-              >Let’s Talk</a
-            >
-          </div>
-        </div>
-        <!-- content - end -->
-
-        <!-- image - start -->
-        <div
-          class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12"
-        >
-          <img
-            src="./src/assets/images/filler-image-5.jpg"
-            loading="lazy"
-            alt="Photo by Fakurian Design"
-            class="h-full w-full object-cover object-center"
-          />
-        </div>
-        <!-- image - end -->
-      </section>
-
-      <div class="bg-white py-6 sm:py-8 lg:py-12">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <h2
-            class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl"
-          >
-            How We Help Your Company
-          </h2>
-
-          <div class="grid gap-4 sm:grid-cols-2 md:gap-6">
-            <!-- product - start -->
-            <div>
-              <a
-                href="#"
-                class="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg"
-              >
-                <img
-                  src="./src/assets/images/filler-image-4.jpg"
-                  loading="lazy"
-                  alt="Photo by Austin Wade"
-                  class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                />
-
-                <div
-                  class="relative flex w-full flex-col rounded-lg bg-white p-4 text-center"
-                >
-                  <span class="text-lg font-bold text-gray-800">Training</span>
-                  <span class="text-sm text-gray-500 lg:text-base"
-                    >Bespoke training for your team to meet your organizational
-                    needs.</span
-                  >
-                </div>
-              </a>
-            </div>
-            <!-- product - end -->
-
-            <!-- product - start -->
-            <div>
-              <a
-                href="#"
-                class="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg"
-              >
-                <img
-                  src="./src/assets/images/filler-image-2.jpg"
-                  loading="lazy"
-                  alt="Photo by engin akyurt"
-                  class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-                />
-
-                <div
-                  class="relative flex w-full flex-col rounded-lg bg-white p-4 text-center"
-                >
-                  <span class="text-lg font-bold text-gray-800"
-                    >Recruitment</span
-                  >
-                  <span class="text-sm text-gray-500 lg:text-base"
-                    >Access and recruit from our pool of vetted junior and
-                    senior product professionals.</span
-                  >
-                </div>
-              </a>
-            </div>
-            <!-- product - end -->
-          </div>
+            class="inline-block rounded-lg bg-primary px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base md:w-3/4">Let’s
+            Talk</a>
         </div>
       </div>
+      <!-- content - end -->
 
-      <div class="bg-white py-6 sm:py-8 lg:py-12">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div
-            class="flex flex-col items-center justify-between gap-4 rounded-lg bg-tint p-4 sm:flex-row md:p-8"
-          >
-            <div>
-              <h2 class="text-xl font-bold text-gray-900 md:text-2xl">
-                Let's Work Together
-              </h2>
-            </div>
-
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeAJeJWLpZbUGyWBuWNzDuQNlFMivHK499C6DTBpKGEfVdksw/viewform?usp=sharing"
-              target="_blank"
-              class="inline-block rounded-lg bg-primary px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-indigo-700 md:text-base"
-              >Let's Talk</a
-            >
-          </div>
-        </div>
+      <!-- image - start -->
+      <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+        <img src="./src/assets/images/filler-image-5.jpg" loading="lazy" alt="Photo by Fakurian Design"
+          class="h-full w-full object-cover object-center" />
       </div>
+      <!-- image - end -->
+    </section>
 
-      <a
-        href="https://wa.me/+2347011978260"
-        target="_blank"
-        class="float inline-flex items-center px-3 py-1.5 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      >
-        Chat with Us
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <h2 class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">
+          How We Help Your Company
+        </h2>
 
-        <img
-          class="w-auto h-4 my-float ml-2"
-          src="./src/assets/icons/whatsapp-icon.svg"
-          alt="whatsapp-icon"
-        />
-      </a>
-
-      <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
-      <!-- footer begins-->
-      <footer class="footer">
-        <div class="brand">
-          <div class="logo">
-            <img
-              src="./src/assets/icons/product-profs-logo.svg"
-              alt=""
-              style="width: 100%"
-            />
-          </div>
-          <div class="social">
-            <p class="social-para">Follow us on socials</p>
-            <div class="social-icons">
-              <a href="https://www.youtube.com/@ProductProfs"
-                ><img src="./src/assets/icons/youtube-red.svg" alt=""
-              /></a>
-              <a
-                href="https://instagram.com/productprofs?igshid=NTc4MTIwNjQ2YQ=="
-                target="_blank"
-                ><img src="./src/assets/icons/instagram.svg" alt=""
-              /></a>
-              <a
-                href="https://www.linkedin.com/company/product-profs/"
-                target="_blank"
-                ><img src="./src/assets/icons/linkedin.svg" alt=""
-              /></a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100092807263045&mibextid=LQQJ4d"
-                target="_blank"
-                ><img src="./src/assets/icons/facebook.svg" alt=""
-              /></a>
-              <a href="https://twitter.com/ProductProfs" target="_blank"
-                ><img src="./src/assets/icons/twitter.svg" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="useful-links">
-          <div class="company">
-            <p>Company</p>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./enterprise.html">Enterprise</a>
-          </div>
-          <div class="products">
-            <p>Products</p>
-            <a href="./freeCourse.html">Free Course</a>
-            <a href="./pmBeginners.html">PM for Beginners</a>
-            <a href="./pmLeadership.html">PM Leadership program</a>
-            <a href="./resources.html">Resources</a>
-          </div>
-        </div>
-
-        <form
-          class="newsletter"
-          action="https://productprofs.us21.list-manage.com/subscribe/post?u=429e2ee00337ef3e35c111000&amp;id=7147d06c75&amp;f_id=003bece6f0"
-          method="post"
-          id="mc-embedded-subscribe-form"
-          name="mc-embedded-subscribe-form"
-          class="validate"
-          target="_blank"
-        >
-          <label>Newsletter</label>
-
-          <p>
-            Learn How To Pay Your Rent With One Month Salary With A Tech Skill…
-            No Code, No Degree And No Age Barrier.
-          </p>
-          <button type="submit">Subscribe</button>
-        </form>
-
-        <div class="divider flex flex-col md:flex-row">
-          <div class="flex items-center gap-2">
-            <img
-              src="./src/assets/icons/product-profs.svg"
-              alt="ProductProfs icon"
-            />
-            <p class="box-border mt-0 text-sm border-0 border-solid">
-              © 2024 ProductProfs. All Rights Reserved.
-            </p>
-          </div>
+        <div class="grid gap-4 sm:grid-cols-2 md:gap-6">
+          <!-- product - start -->
           <div>
-            <img
-              src="./src/assets/images/positivessl_trust_seal_lg_222x54.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </footer>
+            <a href="#" class="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg">
+              <img src="./src/assets/images/filler-image-4.jpg" loading="lazy" alt="Photo by Austin Wade"
+                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
-      <!-- footer ends here -->
+              <div class="relative flex w-full flex-col rounded-lg bg-white p-4 text-center">
+                <span class="text-lg font-bold text-gray-800">Training</span>
+                <span class="text-sm text-gray-500 lg:text-base">Bespoke training for your team to meet your
+                  organizational
+                  needs.</span>
+              </div>
+            </a>
+          </div>
+          <!-- product - end -->
+
+          <!-- product - start -->
+          <div>
+            <a href="#" class="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg">
+              <img src="./src/assets/images/filler-image-2.jpg" loading="lazy" alt="Photo by engin akyurt"
+                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div class="relative flex w-full flex-col rounded-lg bg-white p-4 text-center">
+                <span class="text-lg font-bold text-gray-800">Recruitment</span>
+                <span class="text-sm text-gray-500 lg:text-base">Access and recruit from our pool of vetted junior and
+                  senior product professionals.</span>
+              </div>
+            </a>
+          </div>
+          <!-- product - end -->
+        </div>
+      </div>
     </div>
 
-    <script src="./src/flowbite.min.js"></script>
-    <script src="./src/navbar.js"></script>
-  </body>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="flex flex-col items-center justify-between gap-4 rounded-lg bg-tint p-4 sm:flex-row md:p-8">
+          <div>
+            <h2 class="text-xl font-bold text-gray-900 md:text-2xl">
+              Let's Work Together
+            </h2>
+          </div>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAJeJWLpZbUGyWBuWNzDuQNlFMivHK499C6DTBpKGEfVdksw/viewform?usp=sharing"
+            target="_blank"
+            class="inline-block rounded-lg bg-primary px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-indigo-700 md:text-base">Let's
+            Talk</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://wa.me/+2347011978260" target="_blank"
+      class="float inline-flex items-center px-3 py-1.5 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      Chat with Us
+
+      <img class="w-auto h-4 my-float ml-2" src="./src/assets/icons/whatsapp-icon.svg" alt="whatsapp-icon" />
+    </a>
+
+    <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
+    <!-- footer begins-->
+    <footer class="footer">
+      <div class="brand">
+        <div class="logo">
+          <img src="./src/assets/icons/product-profs-logo.svg" alt="" style="width: 100%" />
+        </div>
+        <div class="social">
+          <p class="social-para">Follow us on socials</p>
+          <div class="social-icons">
+            <a href="https://www.youtube.com/@ProductProfs"><img src="./src/assets/icons/youtube-red.svg" alt="" /></a>
+            <a href="https://instagram.com/productprofs?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><img
+                src="./src/assets/icons/instagram.svg" alt="" /></a>
+            <a href="https://www.linkedin.com/company/product-profs/" target="_blank"><img
+                src="./src/assets/icons/linkedin.svg" alt="" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100092807263045&mibextid=LQQJ4d" target="_blank"><img
+                src="./src/assets/icons/facebook.svg" alt="" /></a>
+            <a href="https://twitter.com/ProductProfs" target="_blank"><img src="./src/assets/icons/twitter.svg"
+                alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="useful-links">
+        <div class="company">
+          <p>Company</p>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./enterprise.html">Enterprise</a>
+        </div>
+        <div class="products">
+          <p>Products</p>
+          <a href="./page.html">Free Course</a>
+          <a href="./pmBeginners.html">PM for Beginners</a>
+          <a href="./pmLeadership.html">PM Leadership program</a>
+          <a href="./resources.html">Resources</a>
+        </div>
+      </div>
+
+      <form class="newsletter"
+        action="https://productprofs.us21.list-manage.com/subscribe/post?u=429e2ee00337ef3e35c111000&amp;id=7147d06c75&amp;f_id=003bece6f0"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+        target="_blank">
+        <label>Newsletter</label>
+
+        <p>
+          Learn How To Pay Your Rent With One Month Salary With A Tech Skill…
+          No Code, No Degree And No Age Barrier.
+        </p>
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="divider flex flex-col md:flex-row">
+        <div class="flex items-center gap-2">
+          <img src="./src/assets/icons/product-profs.svg" alt="ProductProfs icon" />
+          <p class="box-border mt-0 text-sm border-0 border-solid">
+            © 2024 ProductProfs. All Rights Reserved.
+          </p>
+        </div>
+        <div>
+          <img src="./src/assets/images/positivessl_trust_seal_lg_222x54.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends here -->
+  </div>
+
+  <script src="./src/flowbite.min.js"></script>
+  <script src="./src/navbar.js"></script>
+</body>
+
 </html>
