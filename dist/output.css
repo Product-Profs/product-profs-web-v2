@@ -2172,6 +2172,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   min-height: auto;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .\!w-px {
   width: 1px !important;
 }
@@ -4029,6 +4033,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(20 164 77 / var(--tw-border-opacity));
 }
 
+.border-\[\#303031\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(48 48 49 / var(--tw-border-opacity));
+}
+
 .border-\[\#3b71ca\] {
   --tw-border-opacity: 1;
   border-color: rgb(59 113 202 / var(--tw-border-opacity));
@@ -4316,6 +4325,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#303031\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 48 49 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -4692,6 +4706,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-bottom: 5px;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -4786,6 +4805,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-\[6px\] {
   padding-top: 6px;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-left {
@@ -8233,12 +8256,20 @@ input[type="range"]:active::-webkit-slider-thumb {
     height: 16rem;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
   .md\:h-\[34rem\] {
     height: 34rem;
   }
 
   .md\:w-3\/4 {
     width: 75%;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
   }
 
   .md\:w-auto {
@@ -8483,6 +8514,14 @@ input[type="range"]:active::-webkit-slider-thumb {
     max-width: 32rem;
   }
 
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
+  }
+
+  .lg\:basis-2\/3 {
+    flex-basis: 66.666667%;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -8497,6 +8536,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:gap-8 {
@@ -8595,8 +8638,24 @@ input[type="range"]:active::-webkit-slider-thumb {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:p-16 {
+    padding: 4rem;
+  }
+
+  .xl\:p-8 {
+    padding: 2rem;
   }
 
   .xl\:px-0 {
