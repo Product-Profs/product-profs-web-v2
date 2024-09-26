@@ -264,7 +264,7 @@
                 });
 
                 setTimeout(() => {
-                    window.location.href = "/masterclass2.html";
+                    window.location.href = "https://product-profs.github.io/product-profs-web-v2/masterclass2.html";
                 }, 2000);
 
 
