@@ -251,7 +251,7 @@
          *	Error messages are displayed with the invalid input when possible, or appended to #mce-error-response
          */
         mce_success_cb: function (resp) {
-
+            $("#mc-embedded-subscribe").text('Loading');
             $('#mce-success-response').hide();
             $('#mce-error-response').hide();
 
@@ -259,7 +259,7 @@
             if (resp.result == "success") {
                 $('#loader').show();
                 $('#mce-' + resp.result + '-response').show();
-                $('#mce-' + resp.result + '-response').html(resp.msg);
+                $('#mce-' + resp.result + '-response').html('Redirecting, please wait.');
                 $('#mc-embedded-subscribe-form').each(function () {
                     this.reset();
                 });
